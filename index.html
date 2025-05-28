@@ -11,6 +11,9 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      color: #000;
+      line-height: 1.3em;
+      background-color: white;
     }
 
     /* Fixed header with logo and name */
@@ -18,9 +21,9 @@
       position: fixed;
       top: 0;
       width: 100%;
-      height: 80px;
-      background-color: lightgrey; 
-      color: #0760c5;; 
+      height: 70px;
+      background-color:  aqua; 
+      color: white;
       font-weight: bold;
       font-size: x-large;
       display: flex;
@@ -30,7 +33,7 @@
     }
 
     .header img {
-      height: 70px;
+      height: 50px;
       border-radius: 50px;
       margin-right: 15px;
     }
@@ -39,13 +42,13 @@
       font-size: 24px;
       margin: 0;
     }
-
+   
     /* Navigation bar */
     .navbar {
       position: fixed;
-      top: 80px;
+      top: 70px;
       width: 100%;
-      height: 45px;
+      height: 30px;
       background-color: #0e6de1;
       display: flex;
       align-items: center;
@@ -92,17 +95,12 @@
 
     /* Content section */
     .content {
-      margin-top: 85px;	
+      margin-top: 60px;	
       padding: 30px 20px;
       background-color: #f4f4f4; 
     }
 
-    .section {
-      /* margin-bottom: 40px; */
-      /* scroll-margin-top: 130px;  */
-      padding-top: 120px;
-      /* background-color: gray;  */
-    }
+
 
 .footer {
     display: flex;
@@ -114,12 +112,71 @@
     width: 100%;
     margin: 0 auto;
   }
+  /* .section {
+      padding-top: 90px;
+    } */
+  /* ------------------------ */
+
+  .section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 90px;
+      background: #fff;
+      margin: 20px auto;
+      /* max-width: 1000px; */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+    }
+
+    .section:nth-child(even) {
+      flex-direction: row-reverse;
+      background: #f9f9f9;
+    }
+
+    .section-text {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .section-text h2 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .section-text p {
+      color: #555;
+    }
+
+    .section-image {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .section-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column;
+      }
+
+      .section:nth-child(even) {
+        flex-direction: column;
+      }
+    }
+
   </style>
 </head>
 <body>
 
   <div class="header">
-    <img id="cologo" src="images/BlueWhiteLogo.jpg" alt="Company Logo" />
+    <!-- <img id="cologo" src="images/BlueWhiteLogo.jpg" alt="Company Logo" /> -->
+    <img id="cologo" src="images/logo_new.png" alt="Company Logo" />
     <div class="company-name">Manpower And Technologies Consultancy Services</div>
   </div>
 
@@ -135,7 +192,7 @@
   
 <!-- Main Content -->
 <div class="content">
-<section id="aboutus" class="section">
+<section id="aboutus">
   <div class="slider">
     <div class="slides">
       <img src="images/creative-people-working-office.jpg" alt="Slide 1">
@@ -144,36 +201,34 @@
     </div>
   </div> 
  <h2>About Us</h2>
+ <div class="section-text">
+  <p>
   Manpower and Technologies cosultancy services (MTCS) is dedicated to empowering businesses through strategic insight, expert guidance, and results-driven solutions. As a trusted consultancy partner, we specialize in helping organizations navigate complex challenges, seize new opportunities, and achieve sustainable growth.
-
   With a team of experienced consultants from diverse industries, we bring deep domain expertise, analytical rigor, and a client-first approach to every project. Whether you are a startup looking to scale, a corporation pursuing digital transformation, or an organization needing operational efficiency, we tailor our services to meet your unique goals.
-  
   Our core consultancy services include:
   </p>
   <ul>
-    <li>Business Strategy & Transformation</li>
-  
-    <li>Financial Advisory</li>
-  
-    <li>Operations & Process Optimization</li>
-  
-    <li>Market Research & Entry Strategy</li>
-  
-    <li>Digital & Technology Consulting</li>
+    <li><p>Business Strategy & Transformation</p></li>
+    <li><p>Financial Advisory</p></li>
+    <li><p>Operations & Process Optimization</p></li>
+    <li><p>Market Research & Entry Strategy</p></li>
+    <li><p>Digital & Technology Consulting</p></li>
   </ul>
   <p>
   What sets us apart is our commitment to integrity, collaboration, and measurable impact. We don’t just deliver recommendations — we work alongside our clients to implement solutions that drive long-term success.
   </p>
+ </div>
   </section>
 
   <section id="ourservice" class="section">
+    <div class="section-text">
     <h2>Our Services</h2>
     <p>
       We provide end-to-end software consulting services designed to help businesses innovate, scale, and succeed in a digital-first world. Our expertise spans across strategy, design, development, and optimization to ensure technology aligns seamlessly with your business goals.
     </p>
     <ul>
       <li><b>🔧 Custom Software Development</b></li>
-   We design and develop tailored software solutions that address specific business challenges, streamline operations, and deliver measurable results.
+   <p>We design and develop tailored software solutions that address specific business challenges, streamline operations, and deliver measurable results.</p>
   
   <li><b>☁️ Cloud Consulting & Migration</b></li>
   <p>
@@ -199,9 +254,14 @@
   Unlock actionable insights from your data. We help you design and implement analytics solutions that drive informed decision-making.
   </p>
   </ul>
+    </div>
+  <div class="section-image">
+    <img src="images/our-services.jpg" alt="Careers">
+  </div>
   </section>
   
   <section id="industries" class="section">
+    <div class="section-text">
     <h2>INDUSTRIES</h2>
     <p>
       We serve combine deep industry knowledge with technology and talent solutions to help organizations thrive in an evolving landscape. Whether you need skilled professionals or tailored software solutions, our dual expertise in manpower and technology ensures impactful results across sectors.
@@ -228,9 +288,14 @@
         <li><b>🌍 Government & Public Sector</b></li>
         <p>We partner with government bodies to deliver robust IT infrastructure, digital transformation initiatives, and workforce planning support.</p>
     </ul>
+    </div>
+    <div class="section-image">
+      <img src="images/industry.jpg" alt="Careers">
+    </div>
   </section>
   
   <section id="career" class="section">
+    <div class="section-text">
     <h2>CAREERS</h2>
     <p>
       We believe our people are our greatest strength. Whether you're a tech expert, a strategic thinker, or a passionate problem-solver, we offer opportunities that let you grow, innovate, and make a real impact.
@@ -256,34 +321,39 @@
   </h4>
   <ul>
     <li>
-  A software developer, engineer, analyst, tester, or IT professional
+  <p>A software developer, engineer, analyst, tester, or IT professional</p>
   </li>
   <li>
-  An HR, operations, logistics, or finance expert looking for contract or full-time roles
+  <p>An HR, operations, logistics, or finance expert looking for contract or full-time roles</p>
   </li>
   <li>
-  A recent graduate ready to launch your career in technology or workforce management
+  <p>A recent graduate ready to launch your career in technology or workforce management</p>
   </li>
   </ul>
   
   <h4>Current Openings</h4>
   <ul>
-    <li>Software Engineer/Developer</li>
-    <li>Human Resource</li>
-    <li>Telecaller</li>
+    <li><p>Software Engineer/Developer</p></li>
+    <li><p>Human Resource</p></li>
+    <li><p>Telecaller</p></li>
   </ul>
   <p>Submit your resume for further opportunities and shape the future with work and technology together.
   </p>
+    </div>
+  <div class="section-image">
+    <img src="images/career.png" alt="Careers">
+  </div>
   </section> 
   
   <section id="contactus" class="section">
+    <div class="section-text">
     <h2>Contact Us</h2>
     <p>Reach out to our team and we will connect with you for support you needed.</p>
    <ul>
-    <li>
+    <!-- <li>
       <b>📍 Our Office</b>
     </li>
-    <p> A-102, Poonam Star CHS, Virat Nagar, Virar West, Thane 401303, Maharashtra.</p>
+    <p> A-102, Poonam Star CHS, Virat Nagar, Virar West, Thane 401303, Maharashtra.</p> -->
     <li>
       <b>📞 Phone</b>
     </li>
@@ -292,28 +362,39 @@
       <b>📧 Email</b>
     </li>
     <p>
-  <u>General Inquiries:</u> info&#64;mantechconsultancy.com<br>
+  <u>Enquiries:</u> info&#64;mantechconsultancy.com<br>
   <u>Careers:</u> careers&#64;mantechconsultancy.com<br>
   <!-- Business Inquiries: business&#64;mantechconsultancy.com -->
     </p>
     <li>
       <b>🌐 Website</b>
     </li>
-    <a href="https://mantechconsultancy.com" target="_blank">https://mantechconsultancy.com</a>
+    <a href="http://mantechconsultancy.com" target="_blank">www.mantechconsultancy.com</a> 
    </ul>
-  
+    </div>
+    <div class="section-image">
+      <img src="images/Contact-us.png" alt="Contact Us">
+    </div>
   </section>
+  
   <div class="footer">
     <p>Copyright &copy;2025 Manpower And Technologies Consultancy Services. All rights reserved.</p> 
     <p>Privacy Policy  |  Cookie Policy</p>
   </div>
 <script>
-  window.onload = function() {
-    const targetLink = document.querySelector('.navbar a[href="#aboutus"]');
-    if (targetLink) {
-      targetLink.click();
+
+
+   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
     }
-  };
+  });
+});
+
+
 </script>
 </body>
 </html>
