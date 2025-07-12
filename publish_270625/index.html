@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Company Home Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #000;
+      line-height: 1.3em;
+      background-color: white;
+    }
+
+    /* Fixed header with logo and name */
+    .header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 70px;
+      background-color:  aqua; 
+      color: white;
+      font-weight: bold;
+      font-size: x-large;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      z-index: 1000;
+    }
+
+    .header img {
+      height: 50px;
+      border-radius: 50px;
+      margin-right: 15px;
+    }
+
+    .header h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+   
+    /* Navigation bar */
+    .navbar {
+      position: fixed;
+      top: 70px;
+      width: 100%;
+      height: 30px;
+      background-color: #0e6de1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    /* Slider area */
+    .slider {
+      margin-top: 15px; /* 80px header + 50px navbar */
+      /* width: 100%; */
+       height: 350px; 
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slides {
+      display: flex;
+      /* width: 300%;*/
+      /* height: 350px;  */
+      animation: slide 80s linear infinite;
+    }
+
+    .slides img {
+      width: 100%;
+      height: 100%; 
+      object-fit: cover;
+    }
+
+    @keyframes slide {
+      0%   { transform: translateX(0%); }
+      35%  { transform: translateX(-100%); }
+      70%  { transform: translateX(-200%); }   
+      100% { transform: translateX(0%); }
+    }
+
+    /* Content section */
+    .content {
+      margin-top: 60px;	
+      padding: 30px 20px;
+      background-color: #f4f4f4; 
+    }
+
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: #0e6de1;
+    color: white;
+    padding: 10px 0px 10px 0px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  /* .section {
+      padding-top: 90px;
+    } */
+  /* ------------------------ */
+
+  .section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 90px;
+      background: #fff;
+      margin: 20px auto;
+      /* max-width: 1000px; */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+    }
+
+    .section:nth-child(even) {
+      flex-direction: row-reverse;
+      background: #f9f9f9;
+    }
+
+    .section-text {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .section-text h2 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .section-text p {
+      color: #555;
+    }
+
+    .section-image {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .section-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column;
+      }
+
+      .section:nth-child(even) {
+        flex-direction: column;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <!-- <img id="cologo" src="images/BlueWhiteLogo.jpg" alt="Company Logo" /> -->
+    <img id="cologo" src="images/logo_new.png" alt="Company Logo" />
+    <div class="company-name">Manpower And Technologies Consultancy Services</div>
+  </div>
+
+ 
+  <div class="navbar">
+    <a href="#aboutus">ABOUT US</a>
+    <a href="#ourservice">OUR SERVICES</a>
+    <a href="#industries">INDUSTRIES</a>
+    <a href="#career">CAREERS</a>
+    <a href="#contactus">CONTATCT US</a>
+  </div>
+
+  
+<!-- Main Content -->
+<div class="content">
+<section id="aboutus">
+  <div class="slider">
+    <div class="slides">
+      <img src="images/creative-people-working-office.jpg" alt="Slide 1">
+      <img src="images/business-people-shaking-hands-together.jpg" alt="Slide 2">
+      <img src="images/business-concept-with-team-close-up.jpg" alt="Slide 3">
+    </div>
+  </div> 
+ <h2>About Us</h2>
+ <div class="section-text">
+  <p>
+  Manpower and Technologies cosultancy services (MTCS) is dedicated to empowering businesses through strategic insight, expert guidance, and results-driven solutions. As a trusted consultancy partner, we specialize in helping organizations navigate complex challenges, seize new opportunities, and achieve sustainable growth.
+  With a team of experienced consultants from diverse industries, we bring deep domain expertise, analytical rigor, and a client-first approach to every project. Whether you are a startup looking to scale, a corporation pursuing digital transformation, or an organization needing operational efficiency, we tailor our services to meet your unique goals.
+  Our core consultancy services include:
+  </p>
+  <ul>
+    <li><p>Business Strategy & Transformation</p></li>
+    <li><p>Financial Advisory</p></li>
+    <li><p>Operations & Process Optimization</p></li>
+    <li><p>Market Research & Entry Strategy</p></li>
+    <li><p>Digital & Technology Consulting</p></li>
+  </ul>
+  <p>
+  What sets us apart is our commitment to integrity, collaboration, and measurable impact. We don’t just deliver recommendations — we work alongside our clients to implement solutions that drive long-term success.
+</p>
+  <p>Manpower and Technologies cosultancy services (MTCS) is forward-thinking tech startup specializing in digital solutions that power growth. We are a lean, passionate team of developers, designers, and strategists committed to delivering scalable, secure, and innovative technology for businesses of all sizes.</p>
+<p>
+<b>✅ Why Choose Us:                                                    </b></p>
+<ul>
+  <li><p>🚀 Startup Mindset, Enterprise Quality</p></li>
+  <li><p>🔄 Agile & Transparent Process</p></li>
+  <li><p>🧠 Technical Expertise + Business Understanding</p></li>
+  <li><p>🤝 Long-Term Partnership Approach</p></li>
+</ul>
+  <p>Our Mission is to help companies simplify complexity through smart technology, automation, and clean design.</p> 
+
+ </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+  </section>
+
+<section id="ourservice" class="section">
+  <div class="section-text">
+  <h2>Our Services</h2>
+  <p>
+    We provide end-to-end software consulting services designed to help businesses innovate, scale, and succeed in a digital-first world. Our expertise spans across strategy, design, development, and optimization to ensure technology aligns seamlessly with your business goals.
+  </p>
+  <ul>
+    <li><b>🔧 Custom Software Development</b></li>
+    <p>We design and develop tailored software solutions that address specific business challenges, streamline operations, and deliver measurable results.</p>
+    <li><b>🌐 Web and Mobile App Development | Enhancements | Maintenance </b></li>
+    <p>
+    From concept to launch, we build responsive web and mobile applications with great user experiences and high performance across platforms.
+    </p>
+    <li><b>⚙️ Automation tools or CRM/ERP solutions</b></li>
+    <p>
+      We help businesses automate repetitive tasks using cutting-edge tools and custom workflows. From lead generation to invoice processing, our automation services are designed to improve efficiency and reduce manual effort.
+    </p>
+<li><b>☁️ Cloud Consulting & Migration</b></li>
+<p>
+  Modernize your infrastructure with our cloud consulting services. We help you select, migrate, and manage cloud platforms for greater flexibility, scalability, and cost-efficiency.
+  </p>
+
+  <li><b>🧠 Software Architecture & System Integration</b></li>
+  <p>Ensure your systems work harmoniously with our architecture planning and integration services, enabling seamless data flow and scalability.
+  </p>
+  <li><b>🔐 DevOps & Security Consulting</b></li>
+  <p>
+  Accelerate your development lifecycle and improve system reliability with our DevOps strategies, while ensuring robust security practices are in place.
+  </p>
+  <li><b>🧾 IT Strategy & Digital Transformation</b></li>
+  <p>
+  We help organizations align IT strategies with business objectives, guiding them through digital transformation to remain competitive and agile.
+  </p>
+  <li><b>📊 Data Analytics & Business Intelligence</b></li>
+  <p>
+  Unlock actionable insights from your data. We help you design and implement analytics solutions that drive informed decision-making.
+  </p>
+  </ul>
+    </div>
+  <div class="section-image">
+    <img src="images/service.jpg" alt="Careers">
+    <img src="images/service2.jpg" alt="Careers">
+  </div>
+  </section>
+  
+  <section id="industries" class="section">
+    <div class="section-text">
+    <h2>INDUSTRIES</h2>
+    <p>
+      We serve combine deep industry knowledge with technology and talent solutions to help organizations thrive in an evolving landscape. Whether you need skilled professionals or tailored software solutions, our dual expertise in manpower and technology ensures impactful results across sectors.
+    </p>
+    <ul>
+      <li><b>💰 Banking, Financial Services & Insurance (BFSI)</b></li>
+      <p>
+        Our IT and staffing services help financial institutions stay secure, agile, and competitive through cutting-edge fintech solutions and access to top industry talent.
+      </p>
+      <li><b>🏥 Healthcare & Life Sciences</b></li>
+      <p>
+       We provide highly trained professionals and custom software systems that enhance patient care, streamline operations, and ensure compliance with regulatory standards.
+     </p>
+        <li><b>🏭 Manufacturing & Engineering</b></li>
+        <p>From automation software to skilled technical staff, we support manufacturing firms in optimizing operations and embracing Industry 4.0 technologies.</p>
+        <li><b>🛒 Retail & E-Commerce</b></li>
+        <p>We empower retail businesses with digital commerce platforms, inventory solutions, and manpower support to improve customer experience and drive sales.</p>
+        <li><b>🏗️ Construction & Infrastructure</b></li>
+        <p>Our consultants and workforce specialists help companies scale projects efficiently through project management tools, ERP systems, and skilled labor sourcing.</p>
+        <li><b>🎓 Education & E-Learning</b></li>
+        <p>We enable institutions to modernize through learning management systems (LMS), e-learning app development, and administrative staffing solutions.</p>
+        <li><b>🚚 Logistics & Supply Chain</b></li>
+        <p>We support supply chain efficiency with real-time tracking systems, warehouse management software, and logistics workforce placement.</p>
+        <li><b>🌍 Government & Public Sector</b></li>
+        <p>We partner with government bodies to deliver robust IT infrastructure, digital transformation initiatives, and workforce planning support.</p>
+    </ul>
+    </div>
+    <div class="section-image">
+      <img src="images/industry.jpg" alt="Careers">
+      <img src="images/industry2.jpg" alt="Careers">
+    </div>
+  </section>
+  
+  <section id="career" class="section">
+    <div class="section-text">
+    <h2>CAREERS</h2>
+    <p>
+      We believe our people are our greatest strength. Whether you're a tech expert, a strategic thinker, or a passionate problem-solver, we offer opportunities that let you grow, innovate, and make a real impact.
+  
+  As a dual-service leader in manpower and software consultancy, we connect talented individuals with exciting projects across a wide range of industries. From startups to global enterprises, our clients trust us to provide both technical excellence and top-tier professionals — and we trust our team to make that happen.
+    </p>
+    <h4>
+      Why Work With Us?
+    </h4>
+  
+    <ul>
+      <li><b>Diverse Opportunities:</b></li>
+      <p>Work on cutting-edge software projects or take on key roles in top organizations across various industries.</p>
+      <li><b>Career Development:</b></li>
+      <p>Access training, mentorship, and upskilling programs to help you stay ahead in your career.</p>
+      <li><b>Supportive Culture:</b></li>
+      <p>We foster a collaborative, inclusive, and flexible work environment where your contributions are valued.</p>
+      <li><b>Growth-Focused:</b></li>
+      <p>Whether you are seeking a long-term role or a dynamic project-based position, we help match your skills and ambitions with the right opportunities.</p>
+    </ul>
+    <h4>
+    Join Us If You Are:
+  </h4>
+  <ul>
+    <li>
+  <p>A software developer, engineer, analyst, tester, or IT professional</p>
+  </li>
+  <li>
+  <p>An HR, operations, logistics, or finance expert looking for contract or full-time roles</p>
+  </li>
+  <li>
+  <p>A recent graduate ready to launch your career in technology or workforce management</p>
+  </li>
+  </ul>
+  
+  <h4>Current Openings</h4>
+  <ul>
+    <li><p>Software Engineer/Developer</p></li>
+    <li><p>Human Resource</p></li>
+    <li><p>Telecaller</p></li>
+  </ul>
+  <p>Submit your resume for further opportunities and shape the future with work and technology together.
+  </p>
+    </div>
+  <div class="section-image">
+    <!-- <img src="images/career.png" alt="Careers"> -->
+    <img src="images/careers.jpg" alt="Careers">
+    <img src="images/careers2.jpg" alt="Careers">
+  </div>
+  </section> 
+  
+  <section id="contactus" class="section">
+    <div class="section-text">
+    <h2>Contact Us</h2>
+    <p>Reach out to our team and we will connect with you for support you needed.</p>
+   <ul>
+    <!-- <li>
+      <b>📍 Our Office</b>
+    </li>
+    <p> A-102, Poonam Star CHS, Virat Nagar, Virar West, Thane 401303, Maharashtra.</p> -->
+    <li>
+      <b>📞 Phone</b>
+    </li>
+    <p>+91 9545519495/99</p>
+    <li>
+      <b>📧 Email</b>
+    </li>
+    <p>
+  <u>Enquiries:</u> info&#64;mantechconsultancy.com<br>
+  <u>Careers:</u> careers&#64;mantechconsultancy.com<br>
+  <!-- Business Inquiries: business&#64;mantechconsultancy.com -->
+    </p>
+    <li>
+      <b>🌐 Website</b>
+    </li>
+    <a href="http://mantechconsultancy.com" target="_blank">www.mantechconsultancy.com</a> 
+   </ul>
+    </div>
+    <div class="section-image">
+      <img src="images/Contact-us.png" alt="Contact Us">
+    </div>
+  </section>
+  
+  <div class="footer">
+    <p>Copyright &copy;2025 Manpower And Technologies Consultancy Services. All rights reserved.</p> 
+    <p>Privacy Policy  |  Cookie Policy</p>
+  </div>
+<script>
+
+
+   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
+
+
+</script>
+</body>
+</html>
