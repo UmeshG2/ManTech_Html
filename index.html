@@ -15,8 +15,13 @@
       color: #000;
       line-height: 1.3em;
       background-color: white;
-    }
 
+    }
+ p {
+    letter-spacing: 1px;
+    word-spacing: 2.5px;
+    line-height: 1.8; /* You can use 1.5, 1.8, 2, etc. */
+  }
     /* Fixed header with logo and name */
     .header {
       position: fixed;
@@ -125,13 +130,8 @@
       width: 100%;
       margin: 0 auto;
     }
-
-    /* .section {
-      padding-top: 90px;
-    } */
-    /* ------------------------ */
-
-    .section {
+ 
+     .section {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -169,6 +169,7 @@
     }
 
     .section-image img {
+      /* max-width: 100%; */
       max-width: 100%;
       height: auto;
       border-radius: 8px;
@@ -212,11 +213,6 @@
     .contact-left h2 {
       margin-bottom: 20px;
     }
-
-    /* .contact-left ul {
-  list-style: none;
-  padding: 0;
-} */
 
     .contact-left p,
     .contact-left a {
@@ -287,16 +283,19 @@
 
     <div style="text-align:right; width: 25%;">
       <span style="vertical-align:super;color:white;font-size: 15px;">Follow us on</span>
-      <a href="https://www.linkedin.com/company/manpower-and-technologies-consultancy-services-mtcs" target="_blank" style="font-size: 0rem !important">
+      <a href="https://www.linkedin.com/company/manpower-and-technologies-consultancy-services-mtcs" target="_blank"
+        style="font-size: 0rem !important">
         <img id="linkedin" src="images/linkedin.png" alt="linkedin"
           style="margin: 0px;width: 30px; height: auto;padding:0px;" />
       </a>
       &puncsp;
-      <a href="https://www.facebook.com/profile.php?id=61576862123715" target="_blank" style="font-size: 0rem !important">
+      <a href="https://www.facebook.com/profile.php?id=61576862123715" target="_blank"
+        style="font-size: 0rem !important">
         <img id="facebook" src="images/facebook.png" alt="facebook" style="margin: 0px;width: 30px; height: auto;" />
       </a>
       &puncsp;
-      <a href="https://www.instagram.com/mtcs_it?igsh=YTgzOHF0cDhjMWlt" target="_blank" style="font-size: 0rem !important">
+      <a href="https://www.instagram.com/mtcs_it?igsh=YTgzOHF0cDhjMWlt" target="_blank"
+        style="font-size: 0rem !important">
         <img id="instagram" src="images/instagram.png" alt="instagram" style="margin: 0px;width: 30px; height: auto;" />
       </a>
     </div>
@@ -310,7 +309,6 @@
     <a href="#career">CAREERS</a>
     <a href="#contactus">CONTATCT US</a>
   </div>
-
 
   <!-- Main Content -->
   <div class="content">
@@ -330,36 +328,17 @@
           helping organizations navigate complex challenges, seize new opportunities, and achieve sustainable growth.
           With a team of experienced consultants from diverse industries, we bring deep domain expertise, analytical
           rigor, and a client-first approach to every project. Whether you are a startup looking to scale, a corporation
-          pursuing digital transformation, or an organization needing operational efficiency, we tailor our services to
-          meet your unique goals.
-          Our core consultancy services include:
+          pursuing digital and Technology transformation, we tailor our services to meet your unique goals.
         </p>
-        <ul>
-          <li>
-            <p>Business Strategy & Transformation</p>
-          </li>
-          <li>
-            <p>Financial Advisory</p>
-          </li>
-          <li>
-            <p>Operations & Process Optimization</p>
-          </li>
-          <li>
-            <p>Market Research & Entry Strategy</p>
-          </li>
-          <li>
-            <p>Digital & Technology Consulting</p>
-          </li>
-        </ul>
-        <p>
+        <!-- <p>
           What sets us apart is our commitment to integrity, collaboration, and measurable impact. We don’t just deliver
           recommendations — we work alongside our clients to implement solutions that drive long-term success.
-        </p>
+        </p> -->
         <p>Manpower and Technologies cosultancy services (MTCS) is forward-thinking tech startup specializing in digital
           solutions that power growth. We are a lean, passionate team of developers, designers, and strategists
           committed to delivering scalable, secure, and innovative technology for businesses of all sizes.</p>
         <p>
-          <b>✅ Why Choose Us: </b>
+          <strong>✅ Why Choose Us: </strong>
         </p>
         <ul>
           <li>
@@ -369,15 +348,15 @@
             <p>🔄 Agile & Transparent Process</p>
           </li>
           <li>
-            <p>🧠 Technical Expertise + Business Understanding</p>
+            <p>🧠 Technical Expertise And Business Understanding</p>
           </li>
           <li>
             <p>🤝 Long-Term Partnership Approach</p>
           </li>
         </ul>
-        <p>Our Mission is to help companies simplify complexity through smart technology, automation, and clean design.
+        <p>
+          Our Mission is to help companies simplify complexity through smart technology, automation, and clean design technique.
         </p>
-
       </div>
     </section>
 
@@ -404,21 +383,21 @@
             generation to invoice processing, our automation services are designed to improve efficiency and reduce
             manual effort.
           </p>
-          <li><b>☁️ Cloud Consulting & Migration</b></li>
+          <!-- <li><b>☁️ Cloud Consulting & Migration</b></li>
           <p>
             Modernize your infrastructure with our cloud consulting services. We help you select, migrate, and manage
             cloud platforms for greater flexibility, scalability, and cost-efficiency.
-          </p>
+          </p> -->
 
           <li><b>🧠 Software Architecture & System Integration</b></li>
           <p>Ensure your systems work harmoniously with our architecture planning and integration services, enabling
             seamless data flow and scalability.
           </p>
-          <li><b>🔐 DevOps & Security Consulting</b></li>
+          <!-- <li><b>🔐 DevOps & Security Consulting</b></li>
           <p>
             Accelerate your development lifecycle and improve system reliability with our DevOps strategies, while
             ensuring robust security practices are in place.
-          </p>
+          </p> -->
           <li><b>🧾 IT Strategy & Digital Transformation</b></li>
           <p>
             We help organizations align IT strategies with business objectives, guiding them through digital
@@ -432,8 +411,8 @@
         </ul>
       </div>
       <div class="section-image">
-        <img src="images/service.jpg" alt="Careers">
-        <img src="images/service2.jpg" alt="Careers">
+        <img src="images/service.jpg" alt="ourservice">
+        <!-- <img src="images/service2.jpg" alt="Careers"> -->
       </div>
     </section>
 
@@ -471,14 +450,15 @@
           <li><b>🚚 Logistics & Supply Chain</b></li>
           <p>We support supply chain efficiency with real-time tracking systems, warehouse management software, and
             logistics workforce placement.</p>
-          <li><b>🌍 Government & Public Sector</b></li>
+          <!-- <li><b>🌍 Government & Public Sector</b></li>
           <p>We partner with government bodies to deliver robust IT infrastructure, digital transformation initiatives,
-            and workforce planning support.</p>
+            and workforce planning support.</p> -->
         </ul>
       </div>
       <div class="section-image">
-        <img src="images/industry.jpg" alt="Careers">
-        <img src="images/industry2.jpg" alt="Careers">
+        <img src="images/engineers-study-detailed.jpg" alt="industries">
+        <!-- <img src="images/industry.jpg" alt="Careers">
+        <img src="images/industry2.jpg" alt="Careers"> -->
       </div>
     </section>
 
@@ -525,7 +505,7 @@
           </li>
         </ul>
 
-        <h4>Current Openings</h4>
+        <!-- <h4>Current Openings</h4>
         <ul>
           <li>
             <p>Software Engineer/Developer</p>
@@ -538,12 +518,12 @@
           </li>
         </ul>
         <p>Submit your resume for further opportunities and shape the future with work and technology together.
-        </p>
+        </p> -->
       </div>
       <div class="section-image">
         <!-- <img src="images/career.png" alt="Careers"> -->
         <img src="images/careers.jpg" alt="Careers">
-        <img src="images/careers2.jpg" alt="Careers">
+        <!-- <img src="images/careers2.jpg" alt="Careers"> -->
       </div>
     </section>
     <section id="contactus" class="section">
